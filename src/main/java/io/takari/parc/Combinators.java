@@ -134,6 +134,18 @@ public final class Combinators {
         return or(p1, or(p2, or(p3, or(p4, or(p5, p6)))));
     }
 
+    public static <I, O> Parser<I, O> choice(
+            Parser<I, ? extends O> p1,
+            Parser<I, ? extends O> p2,
+            Parser<I, ? extends O> p3,
+            Parser<I, ? extends O> p4,
+            Parser<I, ? extends O> p5,
+            Parser<I, ? extends O> p6,
+            Parser<I, ? extends O> p7) {
+
+        return or(p1, or(p2, or(p3, or(p4, or(p5, or(p6, p7))))));
+    }
+
     public static <I, O> Parser<I, Seq<O>> many(Parser<I, O> p) {
         return loop(p, Seq.empty(), -1);
     }
