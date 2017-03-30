@@ -9,7 +9,7 @@
 
     <groupId>io.takari</groupId>
     <artifactId>parc</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <version>0.1.2</version>
     <packaging>takari-jar</packaging>
 
     <licenses>
@@ -60,6 +60,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:takari/parc.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>0.1.2</tag>
     </scm>
 </project>
